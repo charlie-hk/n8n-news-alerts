@@ -1,11 +1,13 @@
+﻿![n8n news alerts](docs/cover.png)
+
 # n8n news alerts: RSS to Telegram
 
 An [n8n](https://n8n.io) workflow that watches any RSS news feed and sends **only new headlines** to a Telegram chat. It remembers what it has already sent, can filter by keyword, and never floods a fresh setup. Built with market news in mind (central-bank releases, FX and commodity news), but it works with any feed.
 
 ```
-Every 30 min ─┐
-              ├─> Config ─> Read RSS feed ─> New items only ─> Send to Telegram
-Manual test ──┘                              (dedupe + filter)
+Every 30 min â”€â”
+              â”œâ”€> Config â”€> Read RSS feed â”€> New items only â”€> Send to Telegram
+Manual test â”€â”€â”˜                              (dedupe + filter)
 ```
 
 ## Why RSS and not page scraping
@@ -73,3 +75,8 @@ The automated tests run the Code-node logic with simulated n8n inputs. The workf
 ## Licence
 
 MIT
+
+## Screenshot
+
+![Workflow in n8n](docs/n8n-canvas.png)
+
